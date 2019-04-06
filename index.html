@@ -11,9 +11,12 @@
     <textarea name="" id="txt" cols="30" rows="10"></textarea>
     <input type="button" onclick="check()" value="check" placeholder="type the above text here">
     <script>
+ 
         name="This is a typing master game";
         var count=0;
-
+            if(name.length != x.length){
+                count = Math.abs(name.length-x.length);
+            }
         function check(){
         var x = document.getElementById("txt").value;
             for(i=0;i<name.length;i++){
